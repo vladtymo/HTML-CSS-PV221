@@ -1,0 +1,169 @@
+<!-- HTML version 5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page Metadata -->
+    <meta charset="UTF-8">
+    <title>First Page</title>
+
+    <style>
+        /* CSS Selectors */
+        /* 
+            selector {
+                property: value;
+                property: value;
+                ...
+            } 
+        */
+        /* ------------ tag selectors ------------ */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: brown;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px black;
+
+            /* all sides */
+            /* border: 10px; */
+            /* top-left/bottom-right top-right/bottom-left */
+            /* border-radius: 6px 0; */
+            /* each side */
+            border-radius: 6px 0 10px 40px;
+        }
+
+        h2,
+        h3 {
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: justify;
+            background-color: rgb(232, 232, 232);
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        strong {
+            background-color: blanchedalmond;
+            padding: 2px;
+        }
+
+        mark {
+            background-color: transparent;
+            color: blueviolet;
+            font-family: fantasy;
+            font-size: larger;
+        }
+
+        /* ------------ class selectors ------------ */
+        .bordered {
+            border: 1px solid darkred;
+            padding: 2px;
+        }
+
+        .important {
+            background-color: black;
+            color: white;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Content -->
+    <h1>Introduction to HTML</h1>
+    <h2>Introduction to CSS</h2>
+    <h3>Introduction to Web</h3>
+    <h4>Introduction to Tags</h4>
+    <h5>Introduction to Selectors</h5>
+    <h6>Introduction to Semantic</h6>
+
+    <p style="background-color: cadetblue; color: white; padding: 10px;">This is the first paragraph!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, illum corrupti iste rerum nulla deserunt,
+        porro saepe asperiores blanditiis dolor perspiciatis maxime nisi placeat temporibus unde sed. Impedit,
+        recusandae facilis?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, nesciunt!</p>
+
+    <!-- emmet: article>(p>lorem5)*3 -->
+    <article>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p class="bordered important">A, veritatis iste? Deleniti, consequuntur!</p>
+        <p>Dicta, voluptas fugit. Recusandae, iure!</p>
+    </article>
+    <hr>
+    <!-- Select Code -> Ctrl + Shift + P -> Wrap with Abbr... -> write code -->
+
+    <h2>Logical vs Phisical tags</h2>
+    <!-- Logical / Semantic Tags (strong, em, article...) -->
+    <p>The <strong class="bordered">HyperText Markup Language</strong> or HTML is the standard <em>markup language</em>
+        for documents
+        designed to
+        be displayed in a
+        web browser.</p>
+
+    <!-- Phisical Tags (b, i...) -->
+    <p>The <b>HyperText Markup Language</b> or HTML is the standard <i>markup language</i> for documents
+        designed to
+        be displayed in a
+        web browser.</p>
+    <hr>
+
+    <p>You <b>should</b> use <ins>abbr</ins> tag for the abbreviations instead of <del>acronym</del>!</p>
+    <p><abbr title="Cascading Style Sheets">CSS</abbr> is a style sheet language used for describing the presentation of
+        a document written in a
+        markup language such as HTML or XML</p>
+
+    <!-- Quote Tags -->
+    <p>Here's an example of the <strong>inline quote</strong>: <q>Fourscore and seven years ago</q> — is the beginning
+        of Lincoln's
+        Gettysburg Address, which
+        many of us had to memorize in high school.</p>
+    <p><strong>Block quote</strong> example:</p>
+    <blockquote>I need to do my homework.</blockquote>
+
+    <h3>You can find us</h3>
+    <address>Soborna St, 16 ... Rivne, Ukraine</address>
+
+    <hr>
+    <p>
+        <strong class="important">Tag mark:</strong> This is a <mark>highlited</mark> text!<br>
+        <strong>Tag dfn:</strong> <dfn>Programming language</dfn> - system of notation for writing computer
+        programs.<br>
+        <strong>Tag sub:</strong> Formula of water: H<sub>2</sub>O<br>
+        <strong>Tag sup:</strong> Pythagorean theorem: C<sup>2</sup> = A<sup>2</sup> + B<sup>2</sup>
+        <strong>Tag var:</strong> description: <var>C</var> - hypotenuse being<br>
+        <strong>Tag samp:</strong> Try to find a solution: <samp>2 + 2 * 2</samp><br>
+        <strong>Tag kbd:</strong> Open command pallete shortcut: <kbd>Ctrl + Shift + P</kbd><br>
+        <strong>Tag code:</strong> for loop <code>for (int i = 0; i &lt; 10; ++i) { ... }</code>
+    </p>
+
+    <h3>Code Sample</h3>
+    <pre>
+        <code>
+            <samp>
+                body {
+                    background-color: lightblue;
+                  }
+            </samp>
+        </code>
+    </pre>
+
+    <h3>Preformatted Text</h3>
+    <pre>
+        Line 1
+            Line 2
+                    ...
+    </pre>
+
+    <center>
+        <img width="300" src="https://letdiv.com/wp-content/uploads/2021/06/html-css-course.jpg" alt="HTML CSS">
+    </center>
+</body>
+
+</html>
