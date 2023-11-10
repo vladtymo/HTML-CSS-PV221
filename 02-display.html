@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Mode</title>
+    <style>
+        body {
+            /* margin: 0; */
+            /* padding: 0; */
+        }
+
+        p,
+        div {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 4px;
+
+            width: 80%;
+        }
+
+        span {
+            background-color: lightcoral;
+
+            padding: 10px;
+        }
+
+        .inline-block span {
+            /* inline-block: size = content, but we can set block properties */
+            display: inline-block;
+
+            padding: 10px;
+            margin: 4px;
+        }
+
+        img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Block Elements (size = container size)</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, aspernatur!</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <h2>Inline Elements (size = content size)</h2>
+    <div>
+        <span>Hello!</span>
+        <span>How</span>
+        <span>are</span>
+        <span>you?</span>
+    </div>
+
+    <div>
+        <img width="100" src="./images/t6vbjui1jm8q52osgfcj.webp" alt="">
+        <img width="100" src="./images/t6vbjui1jm8q52osgfcj.webp" alt="">
+        <img width="100" src="./images/t6vbjui1jm8q52osgfcj.webp" alt="">
+        <img width="100" src="./images/t6vbjui1jm8q52osgfcj.webp" alt="">
+    </div>
+
+    <h2>Inline-Block Elements</h2>
+    <div class="inline-block">
+        <span>Hello!</span>
+        <span>How</span>
+        <span>are</span>
+        <span>you?</span>
+    </div>
+
+    <h3>Block elements</h3>
+    <div>
+        <div>Block 1</div>
+        <div>Block 2</div>
+        <div>Block 3</div>
+        <div>Block 4</div>
+    </div>
+</body>
+
+</html>
