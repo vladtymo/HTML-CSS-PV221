@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        #bullet {
+            margin: 10px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: coral;
+
+            animation: falling 2s ease-in 3s 5;
+        }
+
+        #bullet:active {
+            /* animation: name duration funciton delay iteration direction fill-mode */
+            animation: morganie 1s ease infinite alternate;
+        }
+
+        #square {
+            margin: 10px;
+            height: 50px;
+            width: 50px;
+            background-color: goldenrod;
+
+            position: fixed;
+            animation: moving 4s infinite alternate;
+        }
+
+        #square:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes moving {
+            from {
+                left: 0;
+                top: 0;
+            }
+
+            to {
+                top: 90%;
+                left: 90%;
+            }
+        }
+
+
+        @keyframes falling {
+            0% {
+                margin-top: 0;
+            }
+
+            80% {
+                margin-top: 70%;
+            }
+
+            90% {
+                margin-top: 60%;
+            }
+
+            95% {
+                margin-top: 70%;
+            }
+        }
+
+        @keyframes morganie {
+            0% {
+                background-color: coral;
+            }
+
+            50% {
+                background-color: black;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="square"></div> -->
+    <div id="bullet"></div>
+</body>
+
+</html>
