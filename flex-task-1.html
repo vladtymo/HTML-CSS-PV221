@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task 1</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 16px;
+
+            background-color: rgb(153, 229, 255);
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card {
+            background-color: rgb(246, 246, 246);
+            /* padding: 10px; */
+            /* margin-bottom: 10px; */
+        }
+
+        .card img {
+            /* width = container width */
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card h2 {
+            font-size: 1.1em;
+        }
+
+        .card .text {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="card">
+                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem cum rerum
+                    reiciendis!</div>
+            </div>
+            <div class="card">
+                <div class="text">Lorem ipsum dolor sit amet consectetur.</div>
+            </div>
+            <div class="card">
+                <img src="./images/nature1.jpg" alt="">
+                <div class="text">
+                    <h2>The title</h2>
+                    Voluptas Lorem, ipsum dolor.
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, omnis?
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/landscape2.jpg" alt="">
+                <div class="text">
+                    <h2>The title</h2>
+                    Lorem ipsum dolor sit amet consectetur.
+                </div>
+            </div>
+            <div class="card">
+                <div class="text">Blanditiis.</div>
+            </div>
+            <div class="card">
+                <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ex.
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="./images/nature3.jpg" alt="">
+                <div class="text">
+                    <h2>The title</h2>
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <div class="card">
+                <div class="text">Lorem ipsum dolor sit.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
