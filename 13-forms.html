@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form h2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .stretch-input {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .stretch-input input {
+            flex-grow: 1;
+        }
+
+        /* ----- custom control style ----- */
+        input.styled {
+            background-color: cornflowerblue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            outline: none;
+            transition: .2s;
+        }
+
+        input.styled::placeholder {
+            color: rgb(223, 223, 223);
+            text-transform: uppercase;
+        }
+
+        input.styled:focus {
+            box-shadow: inset 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        /* ----- attribute selector ----- */
+        button[type="submit"] {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working with Forms</h1>
+
+    <form>
+        <h2>Order Pizza</h2>
+
+        <div class="stretch-input">
+            <label for="u-input" accesskey="u">Username:</label>
+            <input type="text" id="u-input" placeholder="Enter username">
+        </div>
+
+        <label class="stretch-input">
+            <span>Email:</span>
+            <input type="email">
+        </label>
+        <label class="stretch-input">
+            <span>Password:</span>
+            <input type="password">
+        </label>
+
+        <input type="number" step="10" max="20">
+        <input type="tel" class="styled" placeholder="Your Phone">
+        <input type="date">
+        <input type="time">
+        <input type="month">
+        <input type="week">
+        <input type="color">
+        <input type="file">
+        <div>
+            <label>Check Me</label>
+            <input type="checkbox">
+        </div>
+        <div>
+            <h3>Payment Type</h3>
+            <label>Cash</label>
+            <input type="radio" name="payment">
+            <label>Google Pay</label>
+            <input type="radio" name="payment">
+            <label>Apple Pay</label>
+            <input type="radio" name="payment">
+        </div>
+        <input type="range">
+
+        <input type="button" value="Push Me">
+        <button type="reset">Cancel</button>
+        <button type="submit">Order</button>
+    </form>
+</body>
+
+</html>
