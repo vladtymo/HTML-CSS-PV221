@@ -1,0 +1,29 @@
+header {
+    background-color: lightgray;
+    padding: 20px;
+
+    // header .logo
+    .logo {
+        width: 200px;
+        border: 1px solid black;
+        padding: 4px;
+    }
+
+    // header > nav
+    >nav {
+        text-align: center;
+
+        a {
+            background-color: gray;
+            color: white;
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+
+            // & - this element (a)
+            &:hover {
+                background-color: rgb(76, 76, 76);
+            }
+        }
+    }
+}
