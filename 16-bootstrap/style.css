@@ -1,0 +1,9 @@
+#myCarousel .carousel-item {
+    height: 400px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+}
